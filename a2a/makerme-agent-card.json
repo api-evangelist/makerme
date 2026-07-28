@@ -1,0 +1,78 @@
+{
+  "name": "Maker.co Website Improvement Discovery Agent",
+  "version": "1.0.0",
+  "description": "Discovery metadata for Maker.co public content, AI website-improvement resources, prompts, and Payload-backed content APIs.",
+  "url": "https://www.maker.co/.well-known/agent-card.json",
+  "provider": {
+    "name": "Maker.co",
+    "url": "https://www.maker.co"
+  },
+  "documentationUrl": "https://www.maker.co/openapi.json",
+  "defaultInputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "application/json",
+    "text/markdown",
+    "text/plain"
+  ],
+  "supportedInterfaces": [
+    {
+      "name": "HTTP JSON",
+      "url": "https://www.maker.co/api/agent/search",
+      "transport": "https",
+      "protocol": "http-json",
+      "description": "Read-only public search API for Maker.co pages, articles, prompts, and AI website-improvement resources."
+    },
+    {
+      "name": "WebMCP",
+      "url": "https://www.maker.co",
+      "transport": "browser",
+      "description": "Browser-exposed read-only tools when navigator.modelContext is available."
+    },
+    {
+      "name": "MCP",
+      "url": "https://www.maker.co/api/mcp",
+      "transport": "streamable-http",
+      "description": "Payload-backed MCP endpoint for authenticated Maker.co content operations."
+    }
+  ],
+  "securitySchemes": {
+    "PayloadBearer": {
+      "type": "http",
+      "scheme": "bearer",
+      "bearerFormat": "Payload JWT",
+      "description": "Optional bearer token from /api/oauth/token for existing Payload users and protected API access."
+    }
+  },
+  "capabilities": {
+    "readOnlyDiscovery": true,
+    "contentSearch": true,
+    "markdownNegotiation": true,
+    "webBotAuthDirectory": "https://www.maker.co/.well-known/http-message-signatures-directory",
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "skills": [
+    {
+      "id": "site-navigation",
+      "name": "maker-site-navigation",
+      "description": "Find Maker.co public pages, AI-readable content, sitemap, RSS, markdown, and discovery resources.",
+      "url": "https://www.maker.co/.well-known/agent-skills/site-navigation.md"
+    },
+    {
+      "id": "content-search",
+      "name": "maker-content-search",
+      "description": "Search public Maker.co website-improvement pages, articles, and prompts through the read-only agent search API.",
+      "url": "https://www.maker.co/.well-known/agent-skills/content-search.md"
+    },
+    {
+      "id": "prompt-discovery",
+      "name": "maker-prompt-discovery",
+      "description": "Discover public Maker.co prompt resources for AI-generated website pages, sections, components, and redesign ideas.",
+      "url": "https://www.maker.co/.well-known/agent-skills/prompt-discovery.md"
+    }
+  ]
+}
