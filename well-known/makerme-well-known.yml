@@ -1,0 +1,38 @@
+generated: '2026-07-20'
+method: searched
+source: live probes of Maker well-known endpoints (2026-07-20)
+endpoints:
+- host: ai.maker.co
+  path: /.well-known/oauth-authorization-server
+  status: 200
+  file: makerme-ai-oauth-authorization-server.json
+  note: MCP OAuth 2.0 authorization server metadata (RFC 8414); issuer https://ai.maker.co
+- host: ai.maker.co
+  path: /.well-known/oauth-protected-resource
+  status: 200
+  file: makerme-ai-oauth-protected-resource.json
+  note: RFC 9728 protected-resource metadata for the MCP endpoint; resource https://ai.maker.co/mcp, scopes maker:read maker:publish
+- host: api.maker.co
+  path: /.well-known/oauth-authorization-server
+  status: 200
+  file: makerme-api-oauth-authorization-server.json
+  note: OAuth authorization server metadata for the nav_admin_mcp surface (issuer https://api.maker.co)
+- host: api.maker.co
+  path: /.well-known/oauth-protected-resource
+  status: 200
+  file: makerme-api-oauth-protected-resource.json
+  note: resource https://api.maker.co with empty authorization_servers[]
+- host: ai.maker.co
+  path: /.well-known/security.txt
+  status: 404
+- host: www.maker.co
+  path: /.well-known/security.txt
+  status: 200-html
+  note: returns the Next.js app 404 page, not a real RFC 9116 security.txt
+- host: maker.co
+  path: /.well-known/api-catalog
+  status: 307
+  note: redirects to www; no api-catalog published
+- host: docs.maker.co
+  path: /.well-known/ai-plugin.json
+  status: 404

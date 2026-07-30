@@ -1,0 +1,27 @@
+generated: '2026-07-20'
+method: searched
+source: >-
+  status.maker.co, docs.maker.co support-policy and plans-and-billing pages
+  (2026-07-20)
+summary: >-
+  Maker is an actively developed AI website-building SaaS. It operates a public
+  status page and publishes a support policy and billing/plan lifecycle, but does
+  not publish a formal versioned-API deprecation policy or RFC 8594
+  Sunset/Deprecation header contract (there is no documented public REST API — the
+  programmatic surface is the hosted MCP server).
+status_page:
+  url: https://status.maker.co
+  status: 200
+support_policy:
+  url: https://docs.maker.co/tips-and-tricks/support-policy
+plans_and_billing:
+  url: https://docs.maker.co/introduction/plans-and-billing
+  note: >-
+    Flexible plans for individuals and teams; every plan starts with a 14-day free
+    trial. Usage is metered in credits (docs.maker.co/introduction/credits).
+versioning:
+  policy: none-published
+  note: no documented public API versioning or deprecation policy as of 2026-07-20
+deprecation:
+  sunset_header: not-observed
+  policy: none-published

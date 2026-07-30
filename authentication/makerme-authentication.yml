@@ -1,0 +1,46 @@
+generated: '2026-07-20'
+method: searched
+source: >-
+  ai.maker.co and api.maker.co OAuth well-known metadata + docs.maker.co MCP
+  documentation (2026-07-20)
+summary: >-
+  Maker's programmatic surface (the hosted MCP server) is protected by OAuth 2.0.
+  There is no documented public REST API or API-key scheme; access is delegated
+  through the OAuth authorization-code flow with PKCE, and the MCP endpoint is an
+  RFC 9728 protected resource requiring a bearer token.
+schemes:
+- id: oauth2_mcp
+  type: oauth2
+  flow: authorization_code
+  pkce: S256
+  issuer: https://ai.maker.co
+  authorization_endpoint: https://ai.maker.co/oauth/authorize
+  token_endpoint: https://ai.maker.co/oauth/token
+  registration_endpoint: https://ai.maker.co/oauth/register
+  revocation_endpoint: https://ai.maker.co/oauth/revoke
+  token_endpoint_auth_methods:
+  - none
+  grant_types:
+  - authorization_code
+  - refresh_token
+  scopes:
+  - maker:read
+  - maker:publish
+  bearer_methods:
+  - header
+  resource: https://ai.maker.co/mcp
+- id: oauth2_nav_admin
+  type: oauth2
+  flow: authorization_code + client_credentials
+  pkce: S256
+  issuer: https://api.maker.co
+  authorization_endpoint: https://api.maker.co/nav_admin_mcp/authorize
+  token_endpoint: https://api.maker.co/nav_admin_mcp/token
+  token_endpoint_auth_methods:
+  - client_secret_post
+  - client_secret_basic
+  grant_types:
+  - authorization_code
+  - client_credentials
+  note: secondary admin MCP authorization server exposed at api.maker.co
+docs: https://docs.maker.co/features/use-maker-from-your-ai-assistant

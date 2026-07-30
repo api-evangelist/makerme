@@ -1,0 +1,18 @@
+generated: '2026-07-20'
+method: searched
+source: >-
+  ai.maker.co/.well-known/oauth-authorization-server and
+  oauth-protected-resource (scopes_supported), 2026-07-20
+oauth:
+  issuer: https://ai.maker.co
+  resource: https://ai.maker.co/mcp
+scopes:
+- name: maker:read
+  description: >-
+    Read access to the connected Maker account — list and open projects, read
+    project insights, and screenshot previews.
+- name: maker:publish
+  description: >-
+    Publish and mutation access — edit copy, swap images, generate new sections,
+    create variants, set up A/B tests, and push changes live.
+docs: https://docs.maker.co/features/use-maker-from-your-ai-assistant

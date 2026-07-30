@@ -1,0 +1,83 @@
+# Maker Documentation
+
+## Maker Documentation
+
+- [Welcome to Maker](https://docs.maker.co/introduction/welcome-to-maker.md): Maker is an AI-powered platform that converts plain-language prompts into fully coded, production-ready webpages and front-end apps in seconds- right in your browser.
+- [FAQ](https://docs.maker.co/introduction/faq.md): Frequently asked questions about Maker
+- [Account Help](https://docs.maker.co/introduction/faq/account-help.md): Find answers to common questions about your Maker account—sign-in, billing, security, and more.
+- [Data & Privacy](https://docs.maker.co/introduction/faq/data-and-privacy.md)
+- [Style Guide](https://docs.maker.co/introduction/faq/style-guide.md): Get all the questions related to setting up your style guide in Maker answered here
+- [Plans & Billing](https://docs.maker.co/introduction/plans-and-billing.md): Maker offers flexible plans for individuals and teams. Every plan starts with a 14-day free trial — you won't be charged until the trial ends.
+- [Credits](https://docs.maker.co/introduction/credits.md): Credits are how Maker tracks usage. Each AI response is charged based on its actual token cost. The formula uses your plan's credit rate to convert real AI costs into credits.
+- [Quickstart](https://docs.maker.co/introduction/quickstart.md): Get up and running with Maker in under 5 minutes. This guide walks you through creating, previewing, publishing, and editing your first Maker content.
+- [Figma](https://docs.maker.co/features/figma.md): Import artboards from Figma right in the chat—no separate UI needed.
+- [Select to edit](https://docs.maker.co/features/select-to-edit.md): Quickly target any element in your live preview for focused edits—no manual selector hunting required.
+- [Style Guide](https://docs.maker.co/features/style-guide.md): Give Maker “style guide” to keep your colors, fonts and imagery on-brand—across every project.
+- [Style Guide FAQs](https://docs.maker.co/features/style-guide/style-guide-faqs.md): Get all the questions related to setting up your style guide in Maker answered here
+- [Components](https://docs.maker.co/features/components.md): You can reuse components across different projects, and you can also save them to a style guide.
+- [Project Remix](https://docs.maker.co/features/project-remix.md): “Remix” lets you fork any existing Maker project—yours or someone else’s—so you can experiment, customize, or share a template without affecting the original.
+- [Publish](https://docs.maker.co/features/publish.md): Make your Maker project available to the world, or keep it private, right from the editor.
+- [Hosting & Updates](https://docs.maker.co/features/hosting-and-updates.md)
+- [Page Makeover](https://docs.maker.co/features/page-makeover.md): The Page Makeover feature in allows you to instantly transform any page in real time. It improves layout, refines copy, and enhances speed, accessibility and
+- [Create from Image](https://docs.maker.co/features/create-from-image.md): Turn any screenshot, mockup, or design frame into a live, editable page. Upload an image, and Maker instantly analyzes it to generate a matching layout you can customize
+- [Chat mode](https://docs.maker.co/features/chat-mode.md): Use Chat when you want to talk things through with Maker instead of generating code or components right away.
+- [Image/Video Generation](https://docs.maker.co/features/image-video-generation.md): To use Maker's media generation, first click an image on your page and choose Generate. Then pick whether you want to create an Image or a Video from the tabs at the top.
+- [Design panel](https://docs.maker.co/features/design-panel.md): Use the Design panel to fine-tune the look of any element on your page.
+- [Connectors](https://docs.maker.co/features/connectors.md): Use Connectors to link Maker to your other tools so you can pull in content, data, and media without leaving the editor.
+- [Maker Insights](https://docs.maker.co/features/maker-insights.md): Insights helps you monitor performance across Maker—then drill down into heatmaps, element-level engagement, and scroll depth. Available on Max and Enterprise plans.
+- [SSR component support](https://docs.maker.co/features/ssr-component-support.md): Server-side rendering means your content is fully prepared on the server before it reaches your visitor's browser.
+- [Custom Domain](https://docs.maker.co/features/custom-domain.md): Maker supports custom domain mapping, allowing your projects to appear on your own branded domain.
+- [Ai+ PDP Content](https://docs.maker.co/features/ai+-pdp-content.md): Create enhanced product details in minutes. Maker automatically builds fully structured enhanced content, including the visuals, copy, and layout. Use A+ templates  to keep the output consistent.
+- [Compare Versions](https://docs.maker.co/features/compare-versions.md): Version comparison shows two versions of your project side by side so you can quickly spot changes, review Maker updates, track progress, or decide whether to revert.
+- [Collections](https://docs.maker.co/features/collections.md): Collections let you group related projects together so they're easier to find and manage. Create your own custom collections or let Maker handle it automatically based on your project types.
+- [FAQs for AEO](https://docs.maker.co/features/faqs-for-aeo.md): Maker helps you publish FAQs that help shoppers on your site and make your product pages AEO-ready for Al.
+- [Variants and Create Experiences](https://docs.maker.co/features/variants-and-create-experiences.md): Variants let you create multiple versions of a project and control which one your users see based on rules you define. Available on our Max and Enterprise plans.
+- [Variants with Dynamic Content](https://docs.maker.co/features/variants-with-dynamic-content.md): Dynamic content lets you swap specific values on your Maker project for targeted visitors, based on conditions you define, without building a full variant.
+- [Location-based Personalization](https://docs.maker.co/features/location-based-personalization.md): Personalize your content for visitors in different locations. Whether it's a simple city or country swap or a full multi-variant experience, we've got you covered.
+- [Enhance](https://docs.maker.co/features/enhance.md): Embed Maker projects directly on your website and manage them without touching code. Add, remove, or swap projects from a simple toolbar anytime you want.
+- [Templates](https://docs.maker.co/features/templates.md): Templates let you save any project as a reusable starting point. Build your own library, browse Maker's public templates, or let Maker automatically pick one when creating AI+ content.
+- [Product Content Overrides](https://docs.maker.co/features/product-content-overrides.md): Product Content Overrides let you customize how your products look and read across your Maker projects, without making any changes to your store. This is a Maker Enterprise feature.
+- [Skills](https://docs.maker.co/features/skills.md): Skills are specialized instructions that guide how Maker handles specific tasks. Each one comes with domain knowledge and best practices baked in, so Maker knows exactly what to do.
+- [Design Mocks](https://docs.maker.co/features/design-mocks.md): Generate multiple design mocks for a project in seconds. Describe what you want or paste a URL, and Maker will create ready-to-review mockups you can preview, remix, and turn into a full project.
+- [Comments](https://docs.maker.co/features/comments.md): Comments let you leave feedback directly on the specific elements you're talking about. Just click the element, add your comment, and your teammates know exactly what you mean.
+- [Claude Design Import](https://docs.maker.co/features/claude-design-import.md): Maker supports importing prototypes built in Claude Design. Start your design in Claude, bring it into Maker AI to refine it, and publish when it's ready.
+- [Use Maker from your AI Assistant](https://docs.maker.co/features/use-maker-from-your-ai-assistant.md): Connects your favorite AI tools directly to Maker. Instead of switching between your AI assistant and Maker, you can create, edit, and manage projects right from the AI you're already using.
+- [Prompt Basics](https://docs.maker.co/prompting/prompt-basics.md): Use these guidelines to craft clear, actionable prompts that help Maker deliver exactly what you need.
+- [Prompt Examples & Use Cases](https://docs.maker.co/prompting/prompt-basics/prompt-examples-and-use-cases.md): This page contains a curated collection of practical use cases for what you can create using Maker's AI-powered frontend tools.
+- [Debugging with Prompts](https://docs.maker.co/prompting/debugging-with-prompts.md): Use focused prompts to troubleshoot and fix issues in your project. Maker understands error messages, context, and best practices to help streamline debugging.
+- [From idea to Live](https://docs.maker.co/tips-and-tricks/from-idea-to-live.md): A step-by-step workflow for turning your concept into a fully deployed Maker project.
+- [Best Practices](https://docs.maker.co/tips-and-tricks/best-practices.md): Follow these guidelines to get the most accurate, consistent, and on-brand results from Maker.
+- [Troubleshooting](https://docs.maker.co/tips-and-tricks/troubleshooting.md): Use this guide to resolve common issues you may encounter while using Maker.
+- [Forms](https://docs.maker.co/tips-and-tricks/forms.md): If a form is part of your project, here's everything you need to know to get it set up the right way.
+- [SEO](https://docs.maker.co/tips-and-tricks/seo.md)
+- [Adding Maker to your site](https://docs.maker.co/tips-and-tricks/adding-maker-to-your-site.md): Below are step-by-step instructions for adding Maker’s embed scripts to several leading CMS platforms.
+- [Adding Assets](https://docs.maker.co/tips-and-tricks/adding-assets.md): Use JPEGs, PNGs, PDFs, and text files to add context and steer Maker’s output, swap media in your project, or bring in content from external sources, all directly from your prompt.
+- [Adding Trackers](https://docs.maker.co/tips-and-tricks/adding-trackers.md): Add and manage analytics, heatmaps, and custom tracking for your project. Scan your site for existing trackers, add new ones, and attach organization-wide trackers—all in one place.
+- [CMS Specific Tips](https://docs.maker.co/tips-and-tricks/cms-specific-tips.md): Tips and tricks on how to use Maker on CMS's like Shopify, Magento, custom, etc.
+- [Adding Enhanced A+ Content to Shopify Product Detail Pages](https://docs.maker.co/tips-and-tricks/cms-specific-tips/adding-enhanced-a+-content-to-shopify-product-detail-pages.md): Here’s a step-by-step guide to adding Enhanced A+ Content to an individual Shopify product detail page.
+- [Custom Fonts](https://docs.maker.co/tips-and-tricks/custom-fonts.md)
+- [Support Policy](https://docs.maker.co/tips-and-tricks/support-policy.md): Our support policy outlines how to get help, expected response times, and escalation paths—so you always know where to turn when you need assistance.
+- [Glossary](https://docs.maker.co/tips-and-tricks/glossary.md)
+- [Community (TBD)](https://docs.maker.co/tips-and-tricks/community-tbd.md): Engage with the Maker AI community—get inspired, share your work, and help shape the product roadmap.
+- [Animations and Effects (TBD)](https://docs.maker.co/animations-and-effects-tbd.md)
+- [Use Cases](https://docs.maker.co/inspiration/use-cases.md): Maker turns your plain-English prompts into real, responsive web pages and front-end apps—instantly. Here are some common use cases:
+- [Video Tutorials](https://docs.maker.co/inspiration/video-tutorials.md)
+- [Liked Projects](https://docs.maker.co/community/liked-projects.md): Save and revisit your favorite projects by “liking” them—click the heart icon on any project card to add it to your personal Liked tab.
+- [Community Remixes](https://docs.maker.co/community/community-remixes.md): Fork any project—yours or shared—into a brand-new copy without altering the original. Your remixes live in their own tab for easy access and further experimentation.
+- [Support & Contact](https://docs.maker.co/community/support-and-contact.md): Whether you're just getting started or running into a snag, here’s how Maker support works and what you can expect.
+
+
+---
+
+# Agent Instructions
+This documentation is published with GitBook. GitBook is the documentation platform designed so that both humans and AI agents can read, navigate, and reason over technical content effectively. Learn more at gitbook.com.
+
+## Querying This Documentation
+If you need additional information, you can query the documentation dynamically by asking a question.
+Perform an HTTP GET request on a page URL with the `ask` query parameter:
+```
+GET https://docs.maker.co/introduction/welcome-to-maker.md?ask=<question>
+```
+The question should be specific, self-contained, and written in natural language.
+The response will contain a direct answer to the question and relevant excerpts and sources from the documentation.
+Use this mechanism when the answer is not explicitly present in the current page, you need clarification or additional context, or you want to retrieve related documentation sections.

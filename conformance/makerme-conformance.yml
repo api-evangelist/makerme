@@ -1,0 +1,57 @@
+generated: '2026-07-20'
+method: derived
+source: >-
+  Live OAuth well-known metadata (ai.maker.co / api.maker.co) captured in
+  well-known/ + docs.maker.co Security & Compliance summary
+  (introduction/faq/data-and-privacy), 2026-07-20
+summary: >-
+  Maker's programmatic surface is an OAuth-secured hosted MCP server. Standards
+  conformance below is asserted from live well-known metadata and the published
+  security/compliance summary. There is no public REST API, so REST-oriented
+  standards (json:api, odata, rfc9457, pagination, idempotency) are not
+  applicable.
+standards:
+- id: oauth2
+  conforms: true
+  evidence: >-
+    RFC 6749 authorization-code flow with refresh_token; authorization,
+    token, registration, and revocation endpoints published at ai.maker.co.
+- id: oauth2-pkce
+  conforms: true
+  evidence: RFC 7636 PKCE S256 required (code_challenge_methods_supported).
+- id: rfc8414-authorization-server-metadata
+  conforms: true
+  evidence: >-
+    /.well-known/oauth-authorization-server returns 200 with issuer, endpoint,
+    grant, and scope metadata (ai.maker.co and api.maker.co).
+- id: rfc9728-protected-resource-metadata
+  conforms: true
+  evidence: >-
+    /.well-known/oauth-protected-resource returns 200 with resource
+    https://ai.maker.co/mcp and scopes maker:read maker:publish.
+- id: rfc8707-dynamic-client-registration
+  conforms: true
+  evidence: registration_endpoint https://ai.maker.co/oauth/register published.
+- id: oidc
+  conforms: false
+  evidence: >-
+    No /.well-known/openid-configuration published; OAuth 2.0 only, no OpenID
+    Connect discovery document observed.
+- id: rfc9116-security-txt
+  conforms: false
+  evidence: No RFC 9116 security.txt served (404/HTML 404 on probed hosts).
+- id: gdpr
+  conforms: true
+  evidence: >-
+    Docs Security & Compliance summary states adherence to GDPR (EU); data
+    export/deletion on request; 72-hour breach notification.
+- id: ccpa
+  conforms: true
+  evidence: >-
+    Docs Security & Compliance summary states adherence to CCPA (California).
+- id: encryption-in-transit-at-rest
+  conforms: true
+  evidence: >-
+    Docs state TLS 1.2+ in transit and AES-256 at rest; live TLS probe of
+    maker.co negotiates TLSv1.3 with HSTS max-age 63072000.
+docs: https://docs.maker.co/introduction/faq/data-and-privacy

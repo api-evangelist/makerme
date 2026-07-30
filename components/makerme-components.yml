@@ -1,0 +1,38 @@
+generated: '2026-07-20'
+method: searched
+source: >-
+  docs.maker.co/features/enhance and docs.maker.co/tips-and-tricks/adding-maker-to-your-site
+  (2026-07-20)
+summary: >-
+  Maker ships a client-side embed surface — a single loader script placed in the
+  site <head> — that renders published Maker projects on the customer's own
+  website and exposes a visual-editing toolbar on whitelisted domains. This is an
+  embeddable/hosted UI surface distinct from any SDK (Maker publishes no client
+  library).
+families:
+- name: Enhance embed
+  description: >-
+    A single <head> loader script that embeds Maker projects on an existing site,
+    lets non-developers add/remove/swap projects from a floating toolbar, and
+    targets page sections by their id attributes. Loaded with fetchpriority=high
+    to avoid layout blanks during render.
+  variants:
+  - kind: static-site
+    snippet: '<script src="..."></script>'
+    note: Placed in <head>; targets sections by their id attributes.
+  - kind: spa
+    snippet: '<script src="..." data-maker-page-type="SPA"></script>'
+    note: >-
+      data-maker-page-type="SPA" handles dynamic client-side rendering; injection
+      points are declared with data-maker-slot attributes, e.g.
+      <div data-maker-slot="header">.
+  docs: https://docs.maker.co/features/enhance
+- name: Site embed scripts
+  description: >-
+    Step-by-step embed-script installation for leading CMS platforms (Shopify,
+    Magento, custom, and others) to surface Maker content on product/landing
+    pages without touching code.
+  docs: https://docs.maker.co/tips-and-tricks/adding-maker-to-your-site
+notes: >-
+  Actual script src URLs are account/project-specific and issued from the Maker
+  editor; not reproduced here (no fabricated values).

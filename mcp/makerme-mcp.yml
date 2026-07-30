@@ -1,0 +1,56 @@
+generated: '2026-07-20'
+method: searched
+source: docs.maker.co/features/use-maker-from-your-ai-assistant + live well-known probes (2026-07-20)
+name: Maker MCP Server
+status: live
+transport: http
+endpoint: https://ai.maker.co/mcp
+description: >-
+  Maker publishes an official hosted, remote MCP (Model Context Protocol) server
+  that connects AI assistants directly to a user's Maker account. The assistant
+  can do roughly anything a user can do in the Maker UI: list and open projects,
+  edit copy, swap images, generate new sections, screenshot the preview, publish
+  changes live, set up A/B tests, create variants, pull from the skill catalog,
+  and read project insights.
+authentication:
+  type: oauth2
+  note: >-
+    Standard OAuth sign-in. Maker never sees the AI assistant's password and the
+    assistant never sees a Maker API key; each request is scoped to the user's
+    account and granted tools only.
+  issuer: https://ai.maker.co
+  authorization_endpoint: https://ai.maker.co/oauth/authorize
+  token_endpoint: https://ai.maker.co/oauth/token
+  registration_endpoint: https://ai.maker.co/oauth/register
+  revocation_endpoint: https://ai.maker.co/oauth/revoke
+  grant_types:
+  - authorization_code
+  - refresh_token
+  pkce: S256
+  scopes:
+  - name: maker:read
+    description: Read access to the connected Maker account (projects, insights, previews).
+  - name: maker:publish
+    description: Publish and mutate access (edit copy, generate sections, push changes live).
+supported_clients:
+- Claude Desktop and Claude.ai
+- ChatGPT (Business, Enterprise, Edu workspaces with developer mode)
+- Claude Code
+- Codex
+install:
+- client: Claude Code
+  command: claude mcp add --transport http maker https://ai.maker.co/mcp
+- client: Codex
+  command: codex mcp add maker --url https://ai.maker.co/mcp
+capabilities:
+- list and open projects
+- edit copy
+- swap images
+- generate new sections
+- screenshot the preview
+- publish changes live
+- set up A/B tests
+- create variants
+- pull from the skill catalog
+- read project insights
+docs: https://docs.maker.co/features/use-maker-from-your-ai-assistant

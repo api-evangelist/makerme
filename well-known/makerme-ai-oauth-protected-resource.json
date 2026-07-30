@@ -1,0 +1,1 @@
+{"resource":"https://ai.maker.co/mcp","authorization_servers":["https://ai.maker.co"],"scopes_supported":["maker:read","maker:publish"],"bearer_methods_supported":["header"]}
