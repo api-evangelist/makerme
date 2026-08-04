@@ -2,7 +2,8 @@ generated: '2026-07-20'
 method: searched
 source: docs.maker.co/features/use-maker-from-your-ai-assistant + live well-known probes (2026-07-20)
 name: Maker MCP Server
-status: live
+status: published
+status_raw: live
 transport: http
 endpoint: https://ai.maker.co/mcp
 description: >-
