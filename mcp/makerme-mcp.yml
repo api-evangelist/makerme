@@ -58,3 +58,19 @@ deployment:
   probe: gated
   checked: '2026-08-12'
   source: catalog MCP census
+rfc9728:
+  endpoint: https://ai.maker.co/mcp
+  metadata_url: https://ai.maker.co/.well-known/oauth-protected-resource/mcp
+  discovered_via: WWW-Authenticate resource_metadata on an anonymous POST initialize
+  fetched: '2026-09-25'
+  http_status: 200
+  content_type: application/json
+  document:
+    resource: https://ai.maker.co/mcp
+    authorization_servers:
+    - https://ai.maker.co
+    scopes_supported:
+    - maker:read
+    - maker:publish
+    bearer_methods_supported:
+    - header
